@@ -7,7 +7,7 @@ try:
     print(str(service))
     for ch in service.getCharacteristics():
         if ch.supportsRead():
-          	print(" {}".format(ch))
+            print(" {}".format(ch))
             print(" > UUID: ", ch.uuid)
             print(" > HANDLE: ", hex(ch.getHandle()))
             print(" > SUPPORTS: ", ch.propertiesToString())
